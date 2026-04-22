@@ -79,6 +79,16 @@ public class Triangles {
     }
 
     /**
+     * NEW METHOD: perimeter
+     */
+    public double perimetre(double a, double b, double c) {
+        if (!isTriangle(a, b, c)) {
+            return -1;
+        }
+        return a + b + c;
+    }
+
+    /**
      * Round method
      */
     public double round(double num, byte dec) {
@@ -86,7 +96,7 @@ public class Triangles {
     }
 
     /**
-     * MAIN para probar (opcional)
+     * MAIN para probar (opcional pero recomendado)
      */
     public static void main(String[] args) {
 
@@ -104,5 +114,6 @@ public class Triangles {
         System.out.println("Es triángulo: " + t.isTriangle(a, b, c));
         System.out.println("Tipo: " + t.typeOfTriangle(a, b, c));
         System.out.println("Área: " + t.round(t.area(a, b, c), DECIMALS));
+        System.out.println("Perímetro: " + t.perimetre(a, b, c));
     }
 }
