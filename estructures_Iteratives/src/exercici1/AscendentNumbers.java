@@ -24,6 +24,6 @@ public class AscendentNumbers {
 
     public static void main(String[] args) {
         AscendentNumbers p = new AscendentNumbers();
-        p.writeAscNumbers(1, 5);
+        p.writeAscNumbers(1, 10);
     }
 }
